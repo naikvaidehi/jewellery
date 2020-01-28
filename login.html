@@ -69,6 +69,49 @@
 			}
 
        	</style>
+	<script>
+					
+            function validateform() {
+                var name = document.reg_form.uname.value;
+
+                if (name === null || name === "") {
+                    window.alert("Username can't be left blank");
+		    document.getElementById("un").focus();
+                    return false;
+                }
+
+                var password = document.reg_form.passwd.value;
+                if (password.length < 6) {
+                    alert("Password must be at least 6 characters long.");
+		    document.getElementById("p1").focus();;
+                    return false;
+                }
+
+                var x = document.reg_form.email.value;
+                var atposition = x.indexOf("@");
+                var dotposition = x.lastIndexOf(".");
+                if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+                    alert("Please enter a valid e-mail address");
+		    document.getElementById("em").focus();
+                    return false;
+                }
+                var mob_num = document.reg_form.mobile.value;
+                if (isNaN(mob_num)) {
+                    document.getElementById("mob").innerHTML = "Enter Numeric value only";
+                    document.getElementById("ph").focus();
+					return false;
+                } 
+		else if (mob_num.length !== 10) {
+                    document.getElementById("mob").innerHTML ="Mobile number should be of 10 digits";
+                    document.getElementById("ph").focus();
+		    return false;
+                } 
+		else {
+		    document.getElementById("mob").innerHTML = "";
+                    return true;
+                }
+            }
+        </script>  	
 	</head>
 	<body>
 		<img src="logo.jpg" align="right" width="100px" height="150px"><p id="p" style="font-style:bold; font-size:100px;" align="center";><i>Kanak Jewellers</i></p><br>
