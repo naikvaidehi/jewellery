@@ -1,31 +1,94 @@
 <html>
 	<head>
-		<title>Jewellery Website</title>
 		<style>
-			body{border:1px solid black; margin:20px; background-image:url("16.jpg")}
-			img{border:0px solid grey; margin:30px; height:50px;}
-			#p{padding:30px; font-size:10px;}
-			#p2{font-size:20px;}
-			ul{list-style-type:none; font-style:20px; margin:-20px;}
-		</style>
+            		input[type=text] {
+  				width: 60%;
+  				box-sizing: border-box;
+  				border: 2px solid #ccc;
+  				border-radius: 4px;
+  				font-size: 16px;
+  				background-color: white;
+  				padding: 12px 20px 12px 40px;
+  			}
+			body {font-family: Verdana, sans-serif;}
+        		.mySlides {display: none;}
+        		img {vertical-align: middle;}
+        
+			.header {
+  				overflow: hidden;
+  				background-color: #000000;
+  				padding: 20px 10px;
+			}
+
+			.header a {
+  				float: left;
+  				color: rgb(255, 255, 255);
+  				text-align: center;
+  				padding: 12px;
+  				text-decoration: none;
+  				font-size: 18px; 
+  				line-height: 25px;
+  				border-radius: 4px;
+			}
+
+			.header a:hover {
+ 				 background-color: #ddd;
+  				color: black;
+			}
+
+			.header a.active {
+  				background-color: dodgerblue;
+  				color: white;
+			}
+
+			.header-right {
+ 				float: right;
+			}
+
+			@media screen and (max-width: 500px) {
+  				.header a {
+    					float: none;
+    					display: block;
+    					text-align: left;
+  				}
+  
+  				.header-right {
+    					float: none;
+  				}
+			}
+        		.active {
+          			background-color: #717171;
+        		}
+        		.footer {
+   				left: 0;
+   				bottom: 0;
+   				width: 100%;
+   				background-color: black;
+   				color: white;
+   				text-align: center;
+			}
+
+       	</style>
 	</head>
 	<body>
-		<img src="logo.jpg" align="left-top" width="100px" height="210px"><p id="p" style="font-style:bold; font-size:25px;" align="top";><i>Kanak Jewellers</i></p><br>
-		<marquee>
-			<font color="red"; font-size=40px;>About The Website.</font>
-		</marquee><br><br><br>
-		<ul align="left">
-			<li><a href="index.html">HOME</a></li><br>
-			<li><a href="gallery.html">PHOTO GALLERY</a></li><br>
-			<li><a href="about.html">ABOUT US</a></li><br>
-			<li><a href="contact.html">CONTACT</a></li><br>
-			<li><a href="login.html">LOGIN</a></li><br>
-			<li><a href="feedback.html">FEEDBACK</a></li><br>
-			<li><a href="help.html">HELP</a></li><br>
-			<li><a href="review.html">REVIEW</a></li><br>
-		</ul>
-		<center>
-			<p id="p2">This is the notice to our customer that if you'll have queries or any doubt about the jewellery product you'll purchased online from our site you'll definetly can come our store for your further queries and our shop is open from morning 9pm to evening 7am.</p><br><br><br><br><br> 
-		</center>	
+		<img src="logo.jpg" align="right" width="100px" height="150px"><p id="p" style="font-style:bold; font-size:100px;" align="center";><i>Kanak Jewellers</i></p><br>
+		<div class="header">
+                        <a href="index.html">Home</a>
+                        <a href="gallery.html">Photo Gallery</a>
+                        <a href="about.html">About Us</a>
+                        <a href="login.html">Login</a>
+			<a href="feedback.html">Feedback</a>
+			<a href="help.html">Help</a>
+			<a href="review.html">Review</a>
+		</div>
+		<div>	    <br>
+			<p>This is the notice to our customer that if you'll have queries or any doubt about the jewellery product you'll purchased online from our site you'll definetly can come our store for your further queries and our shop is open from morning 9pm to evening 7am.</p>
+		</div>
+		
+		<div class="footer">	<br><br>
+				<p> Designed By:<br>Vaidehi Naik</p>
+				<p> Contact Us:<br>0832-2736418<br>9890108531</p> 
+				<p> Email:<br>kanakjewellery@gmail.com</p>
+		</div>   
 	</body>
 </html>
